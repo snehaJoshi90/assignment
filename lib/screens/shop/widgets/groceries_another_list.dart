@@ -1,27 +1,27 @@
+import 'package:flutter/material.dart';
 import 'package:assignment/common/custom_text.dart';
 import 'package:assignment/screens/product_details/product_detail_screen.dart';
-import 'package:flutter/material.dart';
 
-class ExclusiveOfferList extends StatefulWidget {
-  const ExclusiveOfferList({super.key});
+class GroceriesAnotherList extends StatefulWidget {
+  const GroceriesAnotherList({super.key});
 
   @override
-  State<ExclusiveOfferList> createState() => _ExclusiveOfferListState();
+  State<GroceriesAnotherList> createState() => _GroceriesAnotherListState();
 }
 
-class _ExclusiveOfferListState extends State<ExclusiveOfferList> {
+class _GroceriesAnotherListState extends State<GroceriesAnotherList> {
   List<Map<String, dynamic>> offerList = [
     {
-      'title': 'Organic Bananas',
+      'title': 'Beef Bone',
       'price': '\$4.99',
       'qty': '7 pcs',
-      'image': 'assets/bananas.png',
+      'image': 'assets/beef.png',
     },
     {
-      'title': 'Red Apple',
+      'title': 'Broiler Chicken',
       'price': '\$4.99',
       'qty': '1kg',
-      'image': 'assets/apple.png',
+      'image': 'assets/chicken.png',
     },
     {
       'title': 'Organic Bananas',
@@ -30,10 +30,9 @@ class _ExclusiveOfferListState extends State<ExclusiveOfferList> {
       'image': 'assets/bananas.png',
     },
   ];
-
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return  SizedBox(
         height: 200,
         child: ListView.separated(
             shrinkWrap: true,
@@ -47,10 +46,7 @@ class _ExclusiveOfferListState extends State<ExclusiveOfferList> {
             itemBuilder: (context, index) {
               return InkWell(
                 onTap: (){
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const ProductDetailScreen()),
-                  );
+
                 },
                 child: Container(
                   decoration: BoxDecoration(

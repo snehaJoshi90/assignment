@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:assignment/screens/bottom_navigationbar_screen.dart';
+import 'package:assignment/screens/product_details/product_detail_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,6 +23,8 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         routes: {
           '/': (context) => BottomNavigationBarScreen(),
+          '/product_details': (context) => ProductDetailScreen(),
+
           // home: const MyHomePage(title: 'Flutter Demo Home Page'),
         });
   }

@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:assignment/common/custom_text.dart';
 import 'package:assignment/screens/shop/widgets/banner_widget.dart';
 import 'package:assignment/screens/shop/widgets/exclusive_offer_list.dart';
+import 'package:assignment/screens/shop/widgets/best_selling_list.dart';
+import 'package:assignment/screens/shop/widgets/groceries_list.dart';
+import 'package:assignment/screens/shop/widgets/groceries_another_list.dart';
 
 class ShopScreen extends StatefulWidget {
   const ShopScreen({super.key});
@@ -25,7 +28,7 @@ class _ShopScreenState extends State<ShopScreen> {
         padding: const EdgeInsets.all(10.0),
         child: SingleChildScrollView(
           child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -72,8 +75,81 @@ class _ShopScreenState extends State<ShopScreen> {
                 ),
               ),
               Container(height: 150, child: BannerWidget()),
-              CustomText('Exclusive Offer',style: TextStyle(fontWeight: FontWeight.w700,fontSize: 24),),
+              Row(
+                children: [
+                  CustomText(
+                    'Exclusive Offer',
+                    style: TextStyle(fontWeight: FontWeight.w700, fontSize: 24),
+                  ),
+                  const Spacer(),
+                  TextButton(
+                      onPressed: () {},
+                      child: CustomText(
+                        'See all',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w700,
+                            color: Color(0xff53B175)),
+                      ))
+                ],
+              ),
+              const SizedBox(
+                height: 20,
+              ),
               ExclusiveOfferList(),
+              const SizedBox(
+                height: 20,
+              ),
+              Row(
+                children: [
+                  CustomText(
+                    'Best Selling',
+                    style: TextStyle(fontWeight: FontWeight.w700, fontSize: 24),
+                  ),
+                  const Spacer(),
+                  TextButton(
+                      onPressed: () {},
+                      child: CustomText(
+                        'See all',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w700,
+                            color: Color(0xff53B175)),
+                      )),
+                ],
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              BestSellingList(),
+
+              const SizedBox(
+                height: 20,
+              ),
+
+              Row(
+                children: [
+                  CustomText(
+                    'Groceries',
+                    style: TextStyle(fontWeight: FontWeight.w700, fontSize: 24),
+                  ),
+                  const Spacer(),
+                  TextButton(
+                      onPressed: () {},
+                      child: CustomText(
+                        'See all',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w700,
+                            color: Color(0xff53B175)),
+                      )),
+                ],
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              GroceriesList(),
+              const SizedBox(
+                height: 20,
+              ),
+             GroceriesAnotherList()
             ],
           ),
         ),
