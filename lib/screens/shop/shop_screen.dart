@@ -21,7 +21,10 @@ class _ShopScreenState extends State<ShopScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Center(
-          child: Image.asset( 'assets/carrot.png',height: 30,),
+          child: Image.asset(
+            'assets/carrot.png',
+            height: 30,
+          ),
         ),
       ),
       body: Padding(
@@ -120,11 +123,9 @@ class _ShopScreenState extends State<ShopScreen> {
                 height: 20,
               ),
               BestSellingList(),
-
               const SizedBox(
                 height: 20,
               ),
-
               Row(
                 children: [
                   CustomText(
@@ -149,7 +150,7 @@ class _ShopScreenState extends State<ShopScreen> {
               const SizedBox(
                 height: 20,
               ),
-             GroceriesAnotherList()
+              GroceriesAnotherList()
             ],
           ),
         ),
