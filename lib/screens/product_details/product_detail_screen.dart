@@ -196,6 +196,8 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
         ),
         Positioned(
           bottom: 10,
+          left: 10,
+          right: 10,
           child: ElevatedButton(
               style: ElevatedButton.styleFrom(
                 fixedSize: Size(MediaQuery.of(context).size.width, 49),

@@ -21,7 +21,7 @@ class _ShopScreenState extends State<ShopScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Center(
-          child: Icon(Icons.account_circle),
+          child: Image.asset( 'assets/carrot.png',height: 30,),
         ),
       ),
       body: Padding(

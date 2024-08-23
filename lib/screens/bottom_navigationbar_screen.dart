@@ -1,6 +1,6 @@
 import 'package:assignment/screens/account_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:assignment/screens/explore_screen.dart';
+import 'package:assignment/screens/explore/explore_screen.dart';
 import 'package:assignment/screens/shop/shop_screen.dart';
 import 'package:assignment/screens/favourite_screen.dart';
 import 'package:assignment/screens/cart_screen.dart';
